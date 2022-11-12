@@ -7,15 +7,14 @@ public class MadlibsOfTheAmazon {
 	public static void main(String[] args) {
 		// Put this sentence in a pop up:
 		String prompt =  "If you find yourself having to cross a piranha-infested river, here's how to do it...";
-		
+		JOptionPane.showMessageDialog(null, prompt);
 		// Get the player to enter an adjective
-
-		// Get the player to enter a type of liquid
-
+		String adj = JOptionPane.showInputDialog("Write and adjective");
+System.out.println(adj);
 		// Get the player to enter a body part
-
+		String bodyPart = JOptionPane.showInputDialog("write a body part");
 		// Get the player to enter a verb
-
+		String verb = JOptionPane.showInputDialog("write a verb");
 		// Get the player to enter a place
 
 		// The story below has has been written as a group of Strings joined together by + signs.
@@ -24,9 +23,9 @@ public class MadlibsOfTheAmazon {
 		// Hint:  You will need to add more + signs to join the variables to the other parts of the story.
 		
 		String story = 
-		"Piranhas are more [**adjective**] during the day, so cross the river at\n"  +
-		"night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"  +
-		"likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"  +
+		"Piranhas are more "+adj +" during the day, so cross the river at\n"  +
+		"night. Piranhas are attracted to fresh "+ +" and will most\n"  +
+		"likely take a bite out of your "+bodyPart +" if you "+verb +". Whatever\n"  +
 		"you do, if you have an open wound, try to find another way to get\n"  +
 		"back to the [**place**]. Good luck!";
 		
